@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Mínimo el alto de la pantalla */
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+main{
+    flex-grow: 1; /* Hace que el main ocupe todo el espacio posible */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente el contenido */
+    align-items: center;
+    padding: 20px;
+    /* QUitar ESTO: */
+    height: 1000px;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    display:flexbox;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    padding: 10px;
+    justify-content:left;
+}
+
+.header__nav{
+    display: flexbox;
+    position: relative;
+    margin-top: -37px;
+}
+
+.li_nav__header{
+    display: flexbox;
+    margin: 0 15px;
+    text-decoration: none;
+
+}
+
+.Enlaces_header{
+    color: white;
+    text-decoration: none;
+    
+
+}
+.header__ul{
+    list-style:none ;
+    justify-content: right;
+    position:absolute;
+    left: 45vw;
+    bottom: 30px;
+}
+.header__figure{
+    position:absolute;
+    position:relative;
+
+    right: 25vw;
+}
+
+
+
+.central__main {
+    margin: 50px;
+}
+.central__main_stuffs{
+    margin-bottom: 30px;
+    width: 90vw;
+}
+.central__main_button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.central__main_button:hover {
+    background-color: #0056b3;
+}
+
