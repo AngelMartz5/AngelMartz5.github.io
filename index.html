@@ -6,34 +6,67 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./tablet.css" media="screen and (min-width: 600px)">
     <link rel="stylesheet" href="./computer.css" media="screen and (min-width: 1230px)">
-    <title>PEAK</title>
+    <title>PEAK - Curso de Inglés</title>
 </head>
 <body>
-    <header>
-        <h1>Bienvenido a PEAK</h1>
+    <header class="header">
         <nav class="header__nav">
             <figure class="header__figure">
-                <img src="./LogoTerminado[1]111.png" alt="Logo Empresa" height="150px">
-
+                <img src="./LogoTerminado[1]111.png" alt="Logo de PEAK" height="120">
             </figure>
-            <ul class="header__ul">
-                <li class="li_nav__header"><a href="index.html" class="Enlaces_header">Inicio</a></li>
-                <li class="li_nav__header"><a href="cursos.html" class="Enlaces_header">Sobre el curso</a></li>
+            <ul class="header__menu">
+                <li><a href="#inicio" class="nav__link">Inicio</a></li>
+                <li><a href="#curso" class="nav__link">Sobre el curso</a></li>
+                <li><a href="#beneficios" class="nav__link">Beneficios</a></li>
+                <li><a href="#contacto" class="nav__link">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="central__main">
-            <h2 class="central__main_title central__main_stuffs">Aprende inglés con nosotros</h2>
-            <p class="central__main_text central__main_stuffs">PEAK es la mejor plataforma para aprender inglés de forma sencilla y efectiva.</p>
-            <a  href="cursos.html" class="central__main_button central__main_stuffs">Ver Cursos</a>
+        <section id="inicio" class="hero">
+            <h1 class="hero__title">Bienvenido a PEAK</h1>
+            <p class="hero__subtitle">Curso de inglés presencial en Jamay, Jalisco. 2 años, 12 niveles, enseñado por profesor que tiene amplio dominio del tema.</p>
+            <a href="#curso" class="hero__button">Conoce más</a>
+        </section>
+
+        <section id="curso" class="section">
+            <h2 class="section__title">¿Qué es PEAK?</h2>
+            <p class="section__text">PEAK es un curso estructurado y 100% presencial que te guía desde nivel básico hasta avanzado en solo 2 años. Con un enfoque práctico y seguimiento personalizado.</p>
+        </section>
+
+        <section id="beneficios" class="section">
+            <h2 class="section__title">Ventajas del curso</h2>
+            <ul class="benefits__list">
+                <li>✓ Horario de 7 a 9 PM</li>
+                <li>✓ 6 horas por semana</li>
+                <li>✓ Un solo profesor</li>
+                <li>✓ Avance constante por niveles</li>
+                <li>✓ Clases en Jamay, Jalisco</li>
+            </ul>
+        </section>
+
+        <section id="contacto" class="section">
+            <h2 class="section__title">Contáctanos</h2>
+            <p class="section__text">¿Tienes dudas o quieres inscribirte? ¡Contáctanos ahora mismo!</p>
+            <div class="contact__icons">
+                <a href="https://wa.me/523921000755" target="_blank"><img src="./whatsapp.png" alt="WhatsApp"></a>
+                <a href="https://www.facebook.com" target="_blank"><img src="./facebook.png" alt="Facebook"></a>
+                <img src="./marker.png" alt="Ubicación">
+            </div>
         </section>
     </main>
-    
 
-    <footer>
-        <p>&copy; 2025 PEAK - Todos los derechos reservados.</p>
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__logos">
+                <a href="https://wa.me/523921000755" target="_blank"><img src="./whatsapp.png" alt="WhatsApp" class="footer__icon"></a>
+                <a href="https://www.facebook.com" target="_blank"><img src="./facebook.png" alt="Facebook" class="footer__icon"></a>
+                <img src="./marker.png" alt="Ubicación" class="footer__icon">
+            </div>
+            <p>PEAK - Pascual's English Academy for Knowledge</p>
+            <p>Creado por Pascual Sahagún © 2025</p>
+        </div>
     </footer>
 </body>
 </html>
