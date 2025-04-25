@@ -3,69 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./tablet.css" media="screen and (min-width: 600px)">
-    <link rel="stylesheet" href="./computer.css" media="screen and (min-width: 1230px)">
-    <title>PEAK - Curso de Inglés</title>
+    <link rel="stylesheet" href="style.css">
+    <title>PEAK - Pascual's English Academy for Knowledge</title>
 </head>
 <body>
-    <header class="header">
+    <header>
+        <div class="header__top">
+            <h1>Pascual's English Academy of Knowledge </h1>
+        </div>
         <nav class="header__nav">
             <figure class="header__figure">
-                <img src="./LogoTerminado[1]111.png" alt="Logo de PEAK" height="120">
+                <img src="./LogoTerminado[1]111.png" alt="Logo Empresa" height="100">
             </figure>
-            <ul class="header__menu">
-                <li><a href="#inicio" class="nav__link">Inicio</a></li>
-                <li><a href="#curso" class="nav__link">Sobre el curso</a></li>
-                <li><a href="#beneficios" class="nav__link">Beneficios</a></li>
-                <li><a href="#contacto" class="nav__link">Contacto</a></li>
+            <ul class="header__ul">
+                <li><a href="#inicio" class="Enlaces_header">Inicio</a></li>
+                <li><a href="#sobre" class="Enlaces_header">Sobre el curso</a></li>
+                <li><a href="#testimonios" class="Enlaces_header">Testimonios</a></li>
+                <li><a href="#contacto" class="Enlaces_header">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="inicio" class="hero">
-            <h1 class="hero__title">Bienvenido a PEAK</h1>
-            <p class="hero__subtitle">Curso de inglés presencial en Jamay, Jalisco. 2 años, 12 niveles, enseñado por profesor que tiene amplio dominio del tema.</p>
-            <a href="#curso" class="hero__button">Conoce más</a>
+        <section class="hero" id="inicio">
+            <h2>Aprende inglés con nosotros</h2>
+            <p>PEAK es la mejor plataforma para aprender inglés de forma sencilla y efectiva, con clases 100% presenciales.</p>
+            <a href="#cursos" class="boton">Ver Cursos</a>
         </section>
 
-        <section id="curso" class="section">
-            <h2 class="section__title">¿Qué es PEAK?</h2>
-            <p class="section__text">PEAK es un curso estructurado y 100% presencial que te guía desde nivel básico hasta avanzado en solo 2 años. Con un enfoque práctico y seguimiento personalizado.</p>
-        </section>
-
-        <section id="beneficios" class="section">
-            <h2 class="section__title">Ventajas del curso</h2>
-            <ul class="benefits__list">
-                <li>✓ Horario de 7 a 9 PM</li>
-                <li>✓ 6 horas por semana</li>
-                <li>✓ Un solo profesor</li>
-                <li>✓ Avance constante por niveles</li>
-                <li>✓ Clases en Jamay, Jalisco</li>
-            </ul>
-        </section>
-
-        <section id="contacto" class="section">
-            <h2 class="section__title">Contáctanos</h2>
-            <p class="section__text">¿Tienes dudas o quieres inscribirte? ¡Contáctanos ahora mismo!</p>
-            <div class="contact__icons">
-                <a href="https://wa.me/523921000755" target="_blank"><img src="./whatsapp.png" alt="WhatsApp"></a>
-                <a href="https://www.facebook.com" target="_blank"><img src="./facebook.png" alt="Facebook"></a>
-                <img src="./marker.png" alt="Ubicación">
+        <section class="carousel-section">
+            <div class="carousel">
+                <div class="carousel-images">
+                    <img src="./Pascual 1.jpg" alt="Clase 1">
+                    <img src="./Pascual2.jpg" alt="Clase 2">
+                    <img src="./Pascual3.jpg" alt="Clase 3">
+                </div>
             </div>
+        </section>
+
+        <section class="info-section" id="sobre">
+            <h3>Sobre el Curso</h3>
+            <p>Con una duración de 2 años, nuestro curso ofrece una formación completa con un solo profesor altamente calificado, clases presenciales, seguimiento personalizado y materiales incluidos.</p>
+        </section>
+
+        <section class="info-section" id="testimonios">
+            <h3>Testimonios</h3>
+            <blockquote>“Gracias a PEAK ahora puedo comunicarme en inglés con confianza. ¡Altamente recomendado!” – Ana G.</blockquote>
+            <blockquote>“Un curso serio, profesional y muy accesible. El profesor siempre está atento.” – Jorge M.</blockquote>
+        </section>
+
+        <section class="info-section" id="contacto">
+            <h3>Contáctanos</h3>
+            <form class="contact-form">
+                <input type="text" placeholder="Nombre completo" required>
+                <input type="email" placeholder="Correo electrónico" required>
+                <textarea placeholder="Mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
         </section>
     </main>
 
-    <footer class="footer">
-        <div class="footer__content">
-            <div class="footer__logos">
-                <a href="https://wa.me/523921000755" target="_blank"><img src="./whatsapp.png" alt="WhatsApp" class="footer__icon"></a>
-                <a href="https://www.facebook.com" target="_blank"><img src="./facebook.png" alt="Facebook" class="footer__icon"></a>
-                <img src="./marker.png" alt="Ubicación" class="footer__icon">
-            </div>
-            <p>PEAK - Pascual's English Academy for Knowledge</p>
-            <p>Creado por Pascual Sahagún © 2025</p>
+    <footer>
+        <div class="footer__icons">
+            <img src="./facebook.png" alt="Facebook" width="24">
+            <img src="./marker.png" alt="Ubicación" width="24">
+            <img src="./whatsapp.png" alt="WhatsApp" width="24">
+        </div>
+        <div class="footer__text">
+            <p>Pascual's English Academy for Knowledge</p>
+            <p>By Pascual Sahagun.</p>
         </div>
     </footer>
 </body>
