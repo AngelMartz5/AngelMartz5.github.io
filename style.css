@@ -9,11 +9,11 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #FFFFFF;
-    background-color: #1D3557;
+    background-color: #2d3c50;
 }
 
 header {
-    background-color: #5869ff;
+    background-color: #c5c5ab;
     color: #1D3557;
     text-align: center;
     padding: 1rem;
@@ -40,13 +40,13 @@ header {
 
 .Enlaces_header {
     text-decoration: none;
-    color: #1D3557;
+    color: #131f30;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .Enlaces_header:hover {
-    color: #FFFFFF;
+    color: #919191;
 }
 
 .hero {
@@ -153,6 +153,8 @@ footer {
     height: auto;
 }
 
+
+
 /* Responsive Design */
 @media (min-width: 600px) {
     .header__nav {
@@ -194,4 +196,31 @@ footer {
     .contact-form textarea {
         flex: 1 1 45%;
     }
+    
+    .carousel-images{
+        border-right: 100px;
+    }
+
+    /* Cambiar el ancho de la barra de desplazamiento */
+.carousel::-webkit-scrollbar {
+    width: 10px; /* Ancho para barras verticales */
+    height: 10px; /* Alto para barras horizontales */
+}
+
+/* Cambiar el fondo de la barra de desplazamiento */
+.carousel::-webkit-scrollbar-track {
+    background: #615a41;
+    border-radius: 100px;
+}
+
+/* Cambiar el diseño de la barra en sí */
+.carousel::-webkit-scrollbar-thumb {
+    background: #ffee8b; /* Color de la barra */
+    border-radius: 5px;
+}
+
+/* Cambiar el color cuando el usuario pasa el cursor */
+.carousel::-webkit-scrollbar-thumb:hover {
+    background: #a39800;
+}
 } 
