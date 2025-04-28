@@ -9,7 +9,7 @@
 <body>
     <header>
         <div class="header__top">
-            <h1>Pascual's English Academy of Knowledge </h1>
+            <h1>Pascual's English Academy of Knowledge</h1>
         </div>
         <nav class="header__nav">
             <figure class="header__figure">
@@ -18,7 +18,7 @@
             <ul class="header__ul">
                 <li><a href="#inicio" class="Enlaces_header">Inicio</a></li>
                 <li><a href="#sobre" class="Enlaces_header">Sobre el curso</a></li>
-                <li><a href="#testimonios" class="Enlaces_header">Testimonios</a></li>
+                <li><a href="#testimonios" class="Enlaces_header">Información</a></li>
                 <li><a href="#contacto" class="Enlaces_header">Contacto</a></li>
             </ul>
         </nav>
@@ -28,7 +28,7 @@
         <section class="hero" id="inicio">
             <h2>Aprende inglés con nosotros</h2>
             <p>PEAK es la mejor plataforma para aprender inglés de forma sencilla y efectiva, con clases 100% presenciales.</p>
-            <a href="#cursos" class="boton">Ver Cursos</a>
+            <a href="#cursos" class="boton">*Ver Cursos*</a>
         </section>
 
         <section class="carousel-section">
@@ -47,9 +47,28 @@
         </section>
 
         <section class="info-section" id="testimonios">
-            <h3>Testimonios</h3>
-            <blockquote>“Gracias a PEAK ahora puedo comunicarme en inglés con confianza. ¡Altamente recomendado!” – Ana G.</blockquote>
-            <blockquote>“Un curso serio, profesional y muy accesible. El profesor siempre está atento.” – Jorge M.</blockquote>
+            <h3>¿Qué ofrecemos?</h3>
+            <ul>
+                <li><strong>Método progresivo:</strong> Avanza de principiante a avanzado en solo 12 meses.</li>
+                <li><strong>Clases dinámicas:</strong> Conversación práctica, comprensión auditiva, gramática aplicada y vocabulario funcional.</li>
+                <li><strong>Grupos reducidos:</strong> Atención personalizada para optimizar tu aprendizaje.</li>
+                <li><strong>6 horas por semana:</strong> Lunes, martes y jueves de 7:00 p.m. a 9:00 p.m. <em>(días sujetos a cambios)</em>.</li>
+                <li><strong>12 niveles estructurados:</strong> Cada nivel tiene una duración de 2 meses.</li>
+            </ul>
+
+            <h3>Beneficios adicionales:</h3>
+            <ul>
+                <li>Mejora tu confianza para entrevistas de trabajo.</li>
+                <li>Prepárate para viajar y comunicarte en el extranjero.</li>
+                <li>Amplía tus oportunidades académicas y profesionales.</li>
+            </ul>
+
+            <h3>Información de contacto:</h3>
+            <p><strong>Ubicación:</strong> Tepeyac 79-B, Col. Sn. Isidro, Jamay, Jal.</p>
+            <p><strong>Informes:</strong> 392-941-7293</p>
+            <p><strong>Correo:</strong> peakcursoingles@gmail.com</p>
+
+            <p><strong>¡Invierte en ti y domina el inglés con nosotros!<br>P.E.A.K.: Aprende, comprende y comunica.</strong></p>
         </section>
 
         <section class="info-section" id="contacto">
@@ -78,6 +97,20 @@
         <p>Pascual's English Academy for Knowledge</p>
         <p>By Pascual Sahagun.</p>
     </footer>
-    
+
+    <script>
+        let lastScrollTop = 0;
+        const header = document.querySelector("header");
+        
+        window.addEventListener("scroll", function () {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop) {
+                header.style.top = "-380px"; // Se oculta
+            } else {
+                header.style.top = "0"; // Aparece de nuevo
+            }
+            lastScrollTop = scrollTop;
+        });
+    </script>
 </body>
 </html>
