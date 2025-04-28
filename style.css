@@ -108,21 +108,45 @@ header {
 
 .boton {
     display: inline-block;
-    margin-top: 1rem;
-    padding: 0.5rem 1.5rem;
-    background-color: #E5B80B;
-    color: #1D3557;
-    border: none;
+    padding: 14px 30px;
+    background: linear-gradient(135deg, #007BFF, #00BFFF); /* Degradado bonito */
+    color: white;
+    font-size: 20px;
     font-weight: bold;
     text-decoration: none;
-    border-radius: 30px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    border-radius: 50px; /* Bordes redondeados tipo "píldora" */
+    transition: all 0.4s ease;
+    text-align: center;
+    box-shadow: 0 8px 15px rgba(0, 123, 255, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.boton::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: skewX(-25deg);
+    transition: left 0.5s ease;
+}
+
+.boton:hover::after {
+    left: 125%;
 }
 
 .boton:hover {
-    background-color: #d1a609;
-    transform: scale(1.08);
+    background: linear-gradient(135deg, #0056b3, #0080ff);
+    box-shadow: 0 12px 20px rgba(0, 123, 255, 0.5);
+    transform: translateY(-4px) scale(1.05);
+}
+
+.info-section {
+    text-align: center;
+    margin-top: 50px;
 }
 
 /* CAROUSEL */
